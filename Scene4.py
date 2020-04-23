@@ -11,18 +11,18 @@ def scene4():
 
 	if decision == "A"
 	print("... story continues ...")
-	scene5()
 	points += 0
+	scene5()
 
 	elif decision == "B"
 	print("... story continues ...")
-	scene6()
 	points += 1
+	scene6()
 
 	elif decision == "C"
 	print("... story continues ...")
-	scene6()
 	points += 2
+	scene6()
 
 scene4()
 
