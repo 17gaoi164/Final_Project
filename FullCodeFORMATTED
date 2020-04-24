@@ -91,19 +91,46 @@ def scene4(points):
 		past = 2        
 		print("... story continues ...")
 		points += 0
-		scene6(points, past)
+		scene5(points, past)
 	elif decision == "B":
 		past = 1
 		print("... story continues ...")
 		points += 1
-		scene5(points)
+		scene6(points, past)
 	elif decision == "C":
 		past = 2
 		print("... story continues ...")
 		points += 2
-		scene6(points)
+		scene6(points, past)
+        
+def scene5(points, past):
+	print("After some intense cleaning, you decide to take a break. Although you know your step-mother is right, you wish you could go to the ball. You sigh and get back up to dust the fireplace, when a fairy appears before your eyes.")
+	print("'Cinderella!' she says, 'How could you not go to the ball.' Surprised you ask her who she is, and where she came from. 'I'm your fairy godmother of course, and I am here to take you to the ball!' You feel somewhat excited and realize that you really did want to go to the ball.")
+	print("'So what kind of dress can I get for you darling? I offer quite a variety!' your fairy godmother proudly announces.'")
+	      
+	decision = input("Do you wear... \n A. A modest dress \n B. A goth dress \n C. A sexy dress \n D. No dress, you decide to go for a tux \n")
 
-def scene5(points):
+	if decision == "A":
+		print("'Bibbidi bobbidi boo' and a modest dress appears on you!")
+		points += 0
+		scene7(points, past)
+
+	elif decision == "B":
+		print("'Bibbidi bobbidi boo' and a goth dress appears on you!")
+		points += 1
+		scene7(points, past)
+
+	elif decision == "C":
+		print("'Bibbidi bobbidi boo' and a sexy dress appears on you!")
+		points += 2
+		scene7(points, past)
+	
+	elif decision == "D":
+		print("'Bibbidi bobbidi boo' and a tux appears on you!")
+		points += 3
+		scene7(points, past)
+
+def scene6(points, past):
 	print ("What kind of dress do you decide to wear to the ball?")
 	print ("A: Modest; \n B: Goth; \n C: Sexy; \n D: No dress, you wear a tux")
 	response= input()
@@ -117,18 +144,18 @@ def scene5(points):
 		points += 3
 	else:
 		print("Sorry, I don't understand this response.")
-	scene6(points, past)
+	scene7(points, past)
 
-def scene6(points, past):
+def scene7(points, past):
 	print("After walking to the palace and arriving at the ball, everything is magical. A charming young man asks you to dance. You agree, and find out that he's the prince. Could anything be better? You spend hours with each other, talking and dancing. But the clock suddenly strikes midnight.")
 	if past == 1:
 		print("You realize your sisters are going back home at midnight, and they will be suspicious if you are not there if they call you to make them some tea after a night out. In your haste running back home and away from the prince, you leave behind a shoe.")
 	if past == 2:
 		print("You realize the fairy godmother's magic wears off then, and in your haste running back home and away from the prince, you leave behind a shoe.")
-	scene7(points)
+	scene8(points)
 
 
-def scene7(points):
+def scene8(points):
 	print ("However, your stepmom finds out that you went to the ball and is trying to lock you in the attic. What do you do?")
 	print ("Do you... \n A. You don’t fight back and let her lock you in the attic, as you don't want her to retaliate in a worse way. \n B. You angrily ask her why she’s doing this and you get locked in the attic, but not without a struggle. \n C. You physically fight your stepmom alone and escape. \n D. You physically fight your stepmom and stepsisters with the help of of the mice and you escape.")
 	response= input()
@@ -146,42 +173,42 @@ def scene7(points):
 		points += 3
 	else:
 		print("Sorry, I don't understand this response.")
-	scene8(points)
+	scene9(points)
     
     
 
-def scene8(points):
+def scene9(points):
 	print("You then hear that the Price is looking for you everywhere. 'He has been going to everyone's house to find the girl,' you hear Anastasia say.")
 	print("You hear the doorbell right. Soon you hear your. step-mom caming into your room. 'Don't you dare come downstairs. He is not here for you so stay inside or else you'll get punished,' she hissed.")
 	decision = input("Do you... \n A. Decide to do as your step-mom says. \n B. Disobey her and go downstairs.\n")
 	if decision == "A":
 		print("... story continues ...")
 		points += 0
-		scene9(points)
+		scene10(points)
 	elif decision == "B":
 		print("... story continues ...")
 		points += 3
-		scene10(points)
+		scene11(points)
         
-def scene9(points):
+def scene10(points):
 	print("You hear the Prince talk to your step-mother. 'Is there anyone else in this house that is not present in room?' he asks. Your step-mother quickly responds with a firm no.")
 	print("You then realize that you are in love with the Prince and want to see him.")
 	decision = input("Do you... \n A. Decide to obey your step-mom and stay in your room. \n B. Disobey her and go downstairs.\n")
 	if decision == "A":
 		print("... story continues ...")
 		points += 0
-		scene11(points)
+		scene12(points)
 	elif decision == "B":
 		print("... story continues ...")
 		points += 3
-		scene10(points)
+		scene11(points)
         
-def scene10(points):
-	print("You run downstairs to the main room and lock eyes with the Prince. You step-mom sees you and tells you to go upstais."
-	print ("'Wait!' the Prince says.")
-	print ("'She is just our house maid,' your step-mother replies eyeing you up and down.")
-	print ("'Let her stay as well' the Prince says.")
-	print ("'She hasn't left the house at all this month. She doesn't have to stay,'your step-mother says.")
+def scene11(points):
+	print("You run downstairs to the main room and lock eyes with the Prince. You step-mom sees you and tells you to go upstais.")
+	print("'Wait!' the Prince says.")
+	print("'She is just our house maid,' your step-mother replies eyeing you up and down.")
+	print("'Let her stay as well' the Prince says.")
+	print("'She hasn't left the house at all this month. She doesn't have to stay,'your step-mother says.")
 	print("'Doesn't matter,' the Prince says coming towards you. He then brings out his hand forward and looks at you. Without thinking too much about your step-mother, you take his hand and he leads you towards the sofa.")
 	print("'Sit,' he says. You obey him. He then order the gaurds to bring the shoe. The guard does so and hands the prince your beautiful shoes that you lost while coming back from the ball.")
 	print("The Prince then brings the shoe close to your feet and askes you to put it on. You put on the shoe and it fits perfectly, just like it did during the ball.")   
@@ -190,14 +217,21 @@ def scene10(points):
 	if decision == "A":
 		print("... story continues ...")
 		points += 0
-		scene12(points)
+		scene13(points)
 	elif decision == "B":
 		print("... story continues ...")
 		points += 3
-		scene12(points)
+		scene14(points)
           
-def scene11(points): #Cinderella just obeyed stepmother in staying in room and not seeing Prince
-
+def scene12(points): #Cinderella just obeyed stepmother in staying in room and not seeing Prince
+	print("To be created")
+    
+def scene13(points): #Cinderella just said to the prince she was at the ball
+	print("To be created")
+    
+def scene14(points): #Cinderella just said she wasn't at the ball
+	print("To be created")
+    
 def rebellionscore(points):
 	if points <= 9:
 		print ("You are not very rebellious")
