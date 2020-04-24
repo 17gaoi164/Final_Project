@@ -23,25 +23,7 @@ def scene4():
 		print("Appalled at your step-mother's statement, you yell, 'I would obviously clean myself up, I'm going to find a dress and I am going to go to the ball regardless of your wishes!' You run to your step-sisters' dresser and find a dress to wear.")
 		points += 2
 		scene6()
-print ("What kind of dress do you decide to wear to the ball?")
-	print ("A: Modest; B: Goth; C: Sexy; D: No dress, you wear a tux")
-     response= input()
-    if response == "A":
-        points += 0
-	scene6()
-    elif response == "B":
-        points += 1
-	scene6()
-    elif response == "C":
-        points += 2
-	scene6()
-    elif response == "D":
-        points += 3
-	scene6()
-    else:
-        print("Sorry, I don't understand this response.")
-	
-	return points
+
 
 #scene5() is the fairygodmother scene - change text of dress scene
 #scene6() is the dress scene
