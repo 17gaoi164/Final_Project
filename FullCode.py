@@ -169,5 +169,57 @@ def scene7(points):
 
 def scene8():
 
+	print("You then hear that the Price is looking for you everywhere. 'He has been going to everyone's house to find the girl,' you hear Anastasia say.")
+	print("You hear the doorbell right. Soon you hear your. step-mom caming into your room. 'Don't you dare come downstairs. He is not here for you so stay inside or else you'll get punished,' she hissed.")
+
+	decision = input("Do you... \n A. Decide to do as your step-mom says. \n B. Disobey her and go downstairs.\n")
+
+	if decision == "A":
+		print("... story continues ...")
+		points += 0
+		scene9()
+
+	elif decision == "B":
+		print("... story continues ...")
+		points += 3
+		scene10()
+
+scene8()
 
 def scene9():
+
+	print("You hear the Prince talk to your step-mother. 'Is there anyone else in this house that is not present in room?' he asks. Your step-mother quickly responds with a firm no.")
+	print("You then realize that you are in love with the Prince and want to see him.")
+
+	decision = input("Do you... \n A. Decide to obey your step-mom and stay in your room. \n B. Disobey her and go downstairs.\n")
+
+	if decision == "A":
+		print("... story continues ...")
+		points += 0
+		scene11()
+
+	elif decision == "B":
+		print("... story continues ...")
+		points += 3
+		scene10()
+
+scene9()
+def scene10():
+
+	print("")
+	print("You then realize that you are in love with the Prince and want to see him.')
+
+	decision = input("Do you... \n A. Decide to obey your step-mom and stay in your room. \n B. Disobey her and go downstairs.\n")
+
+	if decision == "A":
+		print("... story continues ...")
+		points += 0
+		scene12()
+
+	elif decision == "B":
+		print("... story continues ...")
+		points += 3
+		scene12()
+
+scene10()
+	
