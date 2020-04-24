@@ -9,22 +9,27 @@ def playagain():
     
 
 def scene1():
+	
+
+
+def scene2():
 	print ("After the cleaning incident, your stepsisters told you to iron their clothes. What is your response?")
 	print ("A: Okay my dear sisters!; B: I will do it later.; C: I don't wanna do it! D: Why don't you do it?!")
     response= input()
     if response == "A":
         points += 0
+	scene3()
     elif response == "B":
         points += 1
+	scene3()
     elif response == "C":
         points += 2
+	scene3()
     elif response == "D":
         points += 3
+	scene3()
     else:
         print("Sorry, I don't understand this response.")
-
-
-def scene2():
 
 
 def scene3():
@@ -56,12 +61,16 @@ def scene5():
      response= input()
     if response == "A":
         points += 0
+	scene6()
     elif response == "B":
         points += 1
+	scene6()
     elif response == "C":
         points += 2
+	scene6()
     elif response == "D":
         points += 3
+	scene6()
     else:
         print("Sorry, I don't understand this response.")
 
@@ -76,12 +85,16 @@ def scene7():
     response= input()
     if response == "A":
         points += 0
+	scene8()
     elif response == "B":
         points += 1
+	scene8()
     elif response == "C":
         points += 2
+	scene8()
     elif response == "D":
         points += 3
+	scene8()
     else:
         print("Sorry, I don't understand this response.")
 
