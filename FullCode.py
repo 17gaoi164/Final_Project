@@ -110,30 +110,63 @@ def scene4(points):
 		print("... story continues ...")
 		points += 2
 		scene6()
+		
 	return points
 
+
 def scene5(points):
+	print("After some intense cleaning, you decide to take a break. Although you know your step-mother is right, you wish you could go to the ball. You sigh and get back up to dust the fireplace, when a fairy appears before your eyes.")
+	print("'Cinderella!' she says, 'How could you not go to the ball.' Surprised you ask her who she is, and where she came from. 'I'm your fairy godmother of course, and I am here to take you to the ball!' You feel somewhat excited and realize that you really did want to go to the ball.")
+	print("'So what kind of dress can I get for you darling? I offer quite a variety!' your fairy godmother proudly announces.'")
+	      
+	decision = input("Do you wear... \n A. A modest dress \n B. A goth dress \n C. A sexy dress \n D. No dress, you decide to go for a tux \n")
+
+	if decision == "A":
+		print("'Bibbidi bobbidi boo' and a modest dress appears on you!")
+		points += 0
+		scene7()
+
+	elif decision == "B":
+		print("'Bibbidi bobbidi boo' and a goth dress appears on you!")
+		points += 1
+		scene7()
+
+	elif decision == "C":
+		print("'Bibbidi bobbidi boo' and a sexy dress appears on you!")
+		points += 2
+		scene7()
+	
+	elif decision == "D":
+		print("'Bibbidi bobbidi boo' and a tux appears on you!")
+		points += 3
+		scene7()
+		
+	return points
+		
+
+
+def scene6(points):
 	print ("What kind of dress do you decide to wear to the ball?")
 	print ("A: Modest; B: Goth; C: Sexy; D: No dress, you wear a tux")
      response= input()
     if response == "A":
         points += 0
-	scene6()
+	scene7()
     elif response == "B":
         points += 1
-	scene6()
+	scene7()
     elif response == "C":
         points += 2
-	scene6()
+	scene7()
     elif response == "D":
         points += 3
-	scene6()
+	scene7()
     else:
         print("Sorry, I don't understand this response.")
 	
 	return points
 
-def scene6(points, past):
+def scene7(points, past):
     print("After walking to the palace and arriving at the ball, everything is magical. A charming young man asks you to dance. You agree, and find out that he's the prince. Could anything be better? You spend hours with each other, talking and dancing. But the clock suddenly strikes midnight.")
     if past == 1:
         print("You realize your sisters are going back home at midnight, and they will be suspicious if you are not there if they call you to make them some tea after a night out. In your haste running back home and away from the prince, you leave behind a shoe.")
@@ -142,35 +175,35 @@ def scene6(points, past):
     return points
 
 
-def scene7(points):
+def scene8(points):
 	print ("However, your stepmom finds out that you went to the ball and is trying to lock you in the attic. What do you do?")
 	print ("A. You don’t fight back and let her lock you in the attic, as you don't want her to retaliate in a worse way. B. You angrily ask her why she’s doing this and you get locked in the attic, but not without a struggle. C. You physically fight your stepmom alone and escape. D. You physically fight your stepmom and stepsisters with the help of of the mice and you escape.")
     response= input()
     if response == "A":
 		print("The mice free you by stealing the key to the attic from your stepmother.")
         points += 0
-	scene8()
+	scene9()
     elif response == "B":
 	print("The mice free you by stealing the key to the attic from your stepmother.")
         points += 1
-	scene8()
+	scene9()
     elif response == "C":
 	print("You can go show the Duke that the slipper fits you.")
         points += 2
-	scene8()
+	scene9()
     elif response == "D":
 	print("You can go show the Duke that the slipper fits you.")
         points += 3
-	scene8()
+	scene9()
     else:
         print("Sorry, I don't understand this response.")
 	
 	return points
 
-def scene8():
-
-
 def scene9():
+
+
+def scene10():
 	
 	
 
