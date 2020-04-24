@@ -117,15 +117,19 @@ def scene7():
 	print ("A. You don’t fight back and let her lock you in the attic, as you don't want her to retaliate in a worse way. B. You angrily ask her why she’s doing this and you get locked in the attic, but not without a struggle. C. You physically fight your stepmom alone and escape. D. You physically fight your stepmom and stepsisters with the help of of the mice and you escape.")
     response= input()
     if response == "A":
+		print("The mice free you by stealing the key to the attic from your stepmother.")
         points += 0
 	scene8()
     elif response == "B":
+	print("The mice free you by stealing the key to the attic from your stepmother.")
         points += 1
 	scene8()
     elif response == "C":
+	print("You can go show the Duke that the slipper fits you.")
         points += 2
 	scene8()
     elif response == "D":
+	print("You can go show the Duke that the slipper fits you.")
         points += 3
 	scene8()
     else:
@@ -133,21 +137,5 @@ def scene7():
 
 def scene8():
 
-	print("You then hear that the Price is looking for you everywhere. 'He has been going to everyone's house to find the girl,' you hear Anastasia say.)
-	print("You hear the doorbell right. Soon you hear your. step-mom caming into your room. 'Don't you dare come downstairs. He is not here for you so stay inside or else you'll get punished,' she hissed.')
-
-	decision = input("Do you... \n A. Decide to do as your step-mom says. \n B. Disobey her and go downstairs.\n")
-
-	if decision == "A":
-		print("... story continues ...")
-		points += 0
-		scene2()
-
-	elif decision == "B":
-		print("... story continues ...")
-		points += 3
-		scene2()
-
-scene8()
 
 def scene9():
