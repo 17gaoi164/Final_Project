@@ -80,3 +80,6 @@ def scene8():
 
 
 def scene9():
+	
+	
+scene1()
