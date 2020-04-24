@@ -99,16 +99,19 @@ def scene4(points):
 	if decision == "A":
 		print("... story continues ...")
 		points += 0
+		past = "2"
 		scene5()
 
 	elif decision == "B":
 		print("... story continues ...")
 		points += 1
+		past = "1"
 		scene6()
 
 	elif decision == "C":
 		print("... story continues ...")
 		points += 2
+		past = "1"
 		scene6()
 		
 	return points
@@ -205,6 +208,13 @@ def scene9():
 
 def scene10():
 	
+def scene11():
+	
+def scene12():
+	
+	
+	def playagain()
+	
 	
 
 	
@@ -217,4 +227,7 @@ if points <= 9:
 		print ("You're somewhat rebellious")
 		elif points <= 27:
 			print ("You are super rebellious")
+			
+
+scene1()
 
