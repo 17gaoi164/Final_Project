@@ -9,7 +9,7 @@ def playagain():
     
     points = 0
 
-def scene1():
+def scene1(points):
 
 	print("Once upon a time, there was a girl named Cinderella. She lived with her step-mother, Lady Tremaine, and two step-sisters, Anastasia and Drizella. They would make Cinderella work all day and give her little to no food.")
 	print("It was a bright Monday mornig. Cinderella's step mom drusted into her room and ordered her to clean the house. 'I want the house clean by 12!', Lady Tremaine yelled.")
@@ -39,7 +39,7 @@ def scene1():
     return points
 
 
-def scene2():
+def scene2(points):
 	print ("After the cleaning incident, your stepsisters tell you to iron their clothes. What is your response?")
 	print ("A: Okay my dear sisters!; B: I will do it later.; C: I don't wanna do it! D: Why don't you do it?!")
     response= input()
@@ -90,7 +90,7 @@ def scene3(points):
     print(respond(response))
     return points
 
-def scene4():
+def scene4(points):
 	print("After hearing about the ball from your sisters, you decide to ask your stepmother to attend as well.")
 	print("... story continues ...")
 
@@ -110,8 +110,9 @@ def scene4():
 		print("... story continues ...")
 		points += 2
 		scene6()
+	return points
 
-def scene5():
+def scene5(points):
 	print ("What kind of dress do you decide to wear to the ball?")
 	print ("A: Modest; B: Goth; C: Sexy; D: No dress, you wear a tux")
      response= input()
@@ -132,11 +133,17 @@ def scene5():
 	
 	return points
 
-def scene6():
+def scene6(points, past):
+    print("After walking to the palace and arriving at the ball, everything is magical. A charming young man asks you to dance. You agree, and find out that he's the prince. Could anything be better? You spend hours with each other, talking and dancing. But the clock suddenly strikes midnight.")
+    if past == 1:
+        print("You realize your sisters are going back home at midnight, and they will be suspicious if you are not there if they call you to make them some tea after a night out. In your haste running back home and away from the prince, you leave behind a shoe.")
+    if past == 2:
+        print("You realize the fairy godmother's magic wears off then, and in your haste running back home and away from the prince, you leave behind a shoe.")
+    return points
 
 
-def scene7():
-	print ("Your stepmom finds out that you went to the ball and is trying to lock you in the attic. What do you do?")
+def scene7(points):
+	print ("However, your stepmom finds out that you went to the ball and is trying to lock you in the attic. What do you do?")
 	print ("A. You don’t fight back and let her lock you in the attic, as you don't want her to retaliate in a worse way. B. You angrily ask her why she’s doing this and you get locked in the attic, but not without a struggle. C. You physically fight your stepmom alone and escape. D. You physically fight your stepmom and stepsisters with the help of of the mice and you escape.")
     response= input()
     if response == "A":
