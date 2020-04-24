@@ -12,7 +12,7 @@ def playagain():
 def scene1(points):
 
 	print("Once upon a time, there was a girl named Cinderella. She lived with her step-mother, Lady Tremaine, and two step-sisters, Anastasia and Drizella. They would make Cinderella work all day and give her little to no food.")
-	print("It was a bright Monday mornig. Cinderella's step mom drusted into her room and ordered her to clean the house. 'I want the house clean by 12!', Lady Tremaine yelled.")
+	print("It was a bright Monday morning. Cinderella's step mom drusted into her room and ordered her to clean the house. 'I want the house clean by 12!', Lady Tremaine yelled.")
 
 	decision = input("Do you... \n A. Decide to do as your step-mom says. \n B. Tell her you'll do it later. \n C. Tell her you don't feel like doing it. \n D. Tell her to do it herself.\n")
 
@@ -41,7 +41,7 @@ def scene1(points):
 
 def scene2(points):
 	print ("After the cleaning incident, your stepsisters tell you to iron their clothes. What is your response?")
-	print ("A: Okay my dear sisters!; B: I will do it later.; C: I don't wanna do it! D: Why don't you do it?!")
+	print ("A: Okay my dear sisters! \n B: I will do it later. \n C: I don't wanna do it \n D: Why don't you do it?! \n")
     response= input()
     if response == "A":
 		print("The stepsisters walk away smugly, feeling satisfied that you did their bidding.")
@@ -177,7 +177,7 @@ def scene7(points, past):
 
 def scene8(points):
 	print ("However, your stepmom finds out that you went to the ball and is trying to lock you in the attic. What do you do?")
-	print ("A. You don’t fight back and let her lock you in the attic, as you don't want her to retaliate in a worse way. B. You angrily ask her why she’s doing this and you get locked in the attic, but not without a struggle. C. You physically fight your stepmom alone and escape. D. You physically fight your stepmom and stepsisters with the help of of the mice and you escape.")
+	print ("A. You don’t fight back and let her lock you in the attic, as you don't want her to retaliate in a worse way \n B. You angrily ask her why she’s doing this and you get locked in the attic, but not without a struggle. \n C. You physically fight your stepmom alone and escape. \n D. You physically fight your stepmom and stepsisters with the help of of the mice and you escape. \n")
     response= input()
     if response == "A":
 		print("The mice free you by stealing the key to the attic from your stepmother.")
