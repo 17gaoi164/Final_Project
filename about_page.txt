@@ -1,0 +1,6 @@
+About Page Draft: 
+
+This web application was a project between team coSIGH in CS10A at Brandeis University. 
+Members Anthony Benitez, Ivy Gao, Pallavi Goel, Priya Morf, and Sampada Pokharel collaborated to recreate the classic “Cinderella” tale into an interactive story. 
+Using python and the Flask framework, the team uses fundamental computer science concepts to allow the user to control their experience. 
+The development includes the use of the google translate API package allowing for accessibility between users of differing languages. 
