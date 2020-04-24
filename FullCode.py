@@ -65,7 +65,30 @@ def scene2():
 	return points
 
 
-def scene3():
+def scene3(points):
+    print("Later that night, you walk by your sisters' room and see them trying on gorgeous dresses.")
+    print("You ask them what it's for, but the just laugh smugly. 'What if a maid like you doesn't need to know?")
+    print("Do you give an angry response or a compliant response? What do you say?")
+    response = input("You:")
+    from random import choice
+    def respond(comment):
+        points = 0
+        if contains(comment,angryWords):
+            points = points + 2
+            print("They look shocked at your outburst, but they still say with arrogance, 'We're going to a ball at the palace. And you're not invited.'")
+        elif contains(comment,submissiveWords):
+            points = points +  0
+            print("They nod. 'Good bye', they say. The next morning, however, as you walk by their door to prepare them breakfast, you hear them laughing. 'I'm so excited for the ball!' they exclaim. You realize that last night, they had been trying on dresses for the ball.")
+        else:
+            points = points + 1
+            print("But they don't even listen to what you have to say. They laugh over your response and slam the door shut. You eavesdrop, and realize that they're trying on clothes for a ball at the palace.")
+    def contains(sentence,words):
+        wordsInSentence = [word for word in words if word in sentence]
+        return len(wordsInSentence) >= 1
+    angryWords = "deserve desire want angry mad unfair upset fight !"
+    submissiveWords = "okay fine ... ok right alright sure yes agree"
+    print(respond(response))
+    return points
 
 def scene4():
 	print("After hearing about the ball from your sisters, you decide to ask your stepmother to attend as well.")
