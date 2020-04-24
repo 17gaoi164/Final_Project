@@ -7,8 +7,6 @@ def playagain():
 	elif answer == "N" or answer == "n":
 		print("See you!")
     
-
-def scene1():
 def scene1():
     points = 0
 
@@ -38,8 +36,6 @@ def scene1():
 		scene2()
 
     return points
-
-scene1()
 
 def scene2():
 
