@@ -11,8 +11,8 @@ def playagain():
 
 def scene1():
 
-	print("There is a girl named Cinderella. She lives with her step-mother, Lady Tremaine, and two step-sisters, Anastasia and Drizella. They would make Cinderella work all day and give her little to no food.")
-	print("It is a bright Monday mornig. Cinderella's step mom drusted into her room and ordered her to clean the house. 'I want the house clean by 12!', Lady Tremaine yelled.")
+	print("Once upon a time, there was a girl named Cinderella. She lived with her step-mother, Lady Tremaine, and two step-sisters, Anastasia and Drizella. They would make Cinderella work all day and give her little to no food.")
+	print("It was a bright Monday mornig. Cinderella's step mom drusted into her room and ordered her to clean the house. 'I want the house clean by 12!', Lady Tremaine yelled.")
 
 	decision = input("Do you... \n A. Decide to do as your step-mom says. \n B. Tell her you'll do it later. \n C. Tell her you don't feel like doing it. \n D. Tell her to do it herself.\n")
 
@@ -42,19 +42,23 @@ scene1()
 
 
 def scene2():
-	print ("After the cleaning incident, your stepsisters told you to iron their clothes. What is your response?")
+	print ("After the cleaning incident, your stepsisters tell you to iron their clothes. What is your response?")
 	print ("A: Okay my dear sisters!; B: I will do it later.; C: I don't wanna do it! D: Why don't you do it?!")
     response= input()
     if response == "A":
+		print("The stepsisters walk away smugly, feeling satisfied that you did their bidding.")
         points += 0
 	scene3()
     elif response == "B":
+	print("The stepsisters tell you that you better do it now, and walk away, annoyed.")
         points += 1
 	scene3()
     elif response == "C":
+	print("The stepsisters say that you have to do it or they'll tell your stepmother, and walk away, upset.")
         points += 2
 	scene3()
     elif response == "D":
+	print("The stepsisters get so angry, tell you that you won't get away with this, and stomp away, furious.")
         points += 3
 	scene3()
     else:
