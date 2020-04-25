@@ -195,9 +195,10 @@ def scene10(points):
 	print("You then realize that you are in love with the Prince and want to see him.")
 	decision = input("Do you... \n A. Decide to obey your step-mom and stay in your room. \n B. Disobey her and go downstairs.\n")
 	if decision == "A":
+		print("But the rats urge you to go down, and finally you listen to them and do.")
 		print("... story continues ...")
 		points += 0
-		scene12(points)
+		scene11(points)
 	elif decision == "B":
 		print("... story continues ...")
 		points += 3
@@ -215,22 +216,19 @@ def scene11(points):
 	print("'Were you there?' the Prince asks you with a hopeful eyes.")
 	decision = input("Do you... \n A. Say yes \n B. Say no.\n")
 	if decision == "A":
-		print("... story continues ...")
-		points += 0
-		scene13(points)
-	elif decision == "B":
+		print("The prince says, 'Ah yes, I thought it was you.'")
 		print("... story continues ...")
 		points += 3
-		scene14(points)
+		scene12(points)
+	elif decision == "B":
+		print("The prince says, 'No, I remember you. You were definitely there.'").
+		print("... story continues ...")
+		points += 0
+		scene12(points)
           
-def scene12(points): #Cinderella just obeyed stepmother in staying in room and not seeing Prince
+def scene12(points): #Final Scene
 	print("To be created")
-    
-def scene13(points): #Cinderella just said to the prince she was at the ball
-	print("To be created")
-    
-def scene14(points): #Cinderella just said she wasn't at the ball
-	print("To be created")
+   
     
 def rebellionscore(points):
 	if points <= 9:
