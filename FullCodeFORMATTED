@@ -10,7 +10,8 @@ def playagain():
 points = 0
 
 def scene1(points):
-	name = str(input("What is your name?"))
+	original_name = str(input("What is your name?"))
+	name = original_name.lower()
 	print("Once upon a time, there was a girl named Cinder" + name + ". She lived with her step-mother, Lady Tremaine, and two step-sisters, Anastasia and Drizella. They would make Cinder" + name + " work all day and give her little to no food.")
 	print("It was a bright Monday mornig. Cinder" + name + "'s step mom drusted into her room and ordered her to clean the house. 'I want the house clean by 12!', Lady Tremaine yelled.")
 
