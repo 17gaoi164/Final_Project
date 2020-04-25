@@ -88,7 +88,7 @@ def scene4(points):
 	print("... story continues ...")
 	decision = input("Do you... \n A. Decide against going, as your stepmother wishes. \n B. Decide to go secretly anyways. \n C. Confront your mother and tell her that you're going regardless of her opinion.\n")
 	if decision == "A":
-		past = 2        
+		past = 2
 		print("... story continues ...")
 		points += 0
 		scene5(points, past)
@@ -102,12 +102,12 @@ def scene4(points):
 		print("... story continues ...")
 		points += 2
 		scene6(points, past)
-        
+
 def scene5(points, past):
 	print("After some intense cleaning, you decide to take a break. Although you know your step-mother is right, you wish you could go to the ball. You sigh and get back up to dust the fireplace, when a fairy appears before your eyes.")
 	print("'Cinderella!' she says, 'How could you not go to the ball.' Surprised you ask her who she is, and where she came from. 'I'm your fairy godmother of course, and I am here to take you to the ball!' You feel somewhat excited and realize that you really did want to go to the ball.")
 	print("'So what kind of dress can I get for you darling? I offer quite a variety!' your fairy godmother proudly announces.'")
-	      
+
 	decision = input("Do you wear... \n A. A modest dress \n B. A goth dress \n C. A sexy dress \n D. No dress, you decide to go for a tux \n")
 
 	if decision == "A":
@@ -124,7 +124,7 @@ def scene5(points, past):
 		print("'Bibbidi bobbidi boo' and a sexy dress appears on you!")
 		points += 2
 		scene7(points, past)
-	
+
 	elif decision == "D":
 		print("'Bibbidi bobbidi boo' and a tux appears on you!")
 		points += 3
@@ -174,8 +174,8 @@ def scene8(points):
 	else:
 		print("Sorry, I don't understand this response.")
 	scene9(points)
-    
-    
+
+
 
 def scene9(points):
 	print("You then hear that the Price is looking for you everywhere. 'He has been going to everyone's house to find the girl,' you hear Anastasia say.")
@@ -189,7 +189,7 @@ def scene9(points):
 		print("... story continues ...")
 		points += 3
 		scene11(points)
-        
+
 def scene10(points):
 	print("You hear the Prince talk to your step-mother. 'Is there anyone else in this house that is not present in room?' he asks. Your step-mother quickly responds with a firm no.")
 	print("You then realize that you are in love with the Prince and want to see him.")
@@ -203,7 +203,7 @@ def scene10(points):
 		print("... story continues ...")
 		points += 3
 		scene11(points)
-        
+
 def scene11(points):
 	print("You run downstairs to the main room and lock eyes with the Prince. You step-mom sees you and tells you to go upstais.")
 	print("'Wait!' the Prince says.")
@@ -212,7 +212,7 @@ def scene11(points):
 	print("'She hasn't left the house at all this month. She doesn't have to stay,'your step-mother says.")
 	print("'Doesn't matter,' the Prince says coming towards you. He then brings out his hand forward and looks at you. Without thinking too much about your step-mother, you take his hand and he leads you towards the sofa.")
 	print("'Sit,' he says. You obey him. He then order the gaurds to bring the shoe. The guard does so and hands the prince your beautiful shoes that you lost while coming back from the ball.")
-	print("The Prince then brings the shoe close to your feet and askes you to put it on. You put on the shoe and it fits perfectly, just like it did during the ball.")   
+	print("The Prince then brings the shoe close to your feet and askes you to put it on. You put on the shoe and it fits perfectly, just like it did during the ball.")
 	print("'Were you there?' the Prince asks you with a hopeful eyes.")
 	decision = input("Do you... \n A. Say yes \n B. Say no.\n")
 	if decision == "A":
@@ -225,7 +225,7 @@ def scene11(points):
 		print("... story continues ...")
 		points += 0
 		scene12(points)
-          
+
 def scene12(points):
 	print("'Ever since I first laid my eyes on you, I knew I loved you.' the Prince tells you")
 	print("'Cinderella, will you make me the happiest man alive and marry me?' he asked you'")
@@ -237,8 +237,8 @@ def scene12(points):
         	print("Soon after the incident, Cinderall moved to NYC and she lived happily ever after.")
 	rebellionscore(points)
 
-   
-    
+
+
 def rebellionscore(points):
 	if points <= 9:
 		print ("You are not very rebellious")
