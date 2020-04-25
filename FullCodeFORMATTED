@@ -221,7 +221,7 @@ def scene11(points):
 		points += 3
 		scene12(points)
 	elif decision == "B":
-		print("The prince says, 'No, I remember you. You were definitely there.'").
+		print("The prince says, 'No, I remember you. You were definitely there.'")
 		print("... story continues ...")
 		points += 0
 		scene12(points)
