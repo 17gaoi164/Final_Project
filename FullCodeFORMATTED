@@ -226,8 +226,20 @@ def scene11(points):
 		points += 0
 		scene12(points)
           
-def scene12(points): #Final Scene
-	print("To be created")
+def scene12():
+    print("'Ever since I first laid my eyes on you, I knew I loved you.' the Prince tells you")
+    print("'Cinderella, will you make me the happiest man alive and marry me?' he asked you'")
+    print("You looked around the room and saw your step-mother's angry face. You looked down at the Price. You realized it was your time to make your decision now")
+
+    decision = input("Do you... \n A. Say yes, I'll marry you \n B. Say no.\n")
+
+	if decision == "A":
+        print("And they lived happily ever after.")
+
+	elif decision == "B":
+        print("Soon after the incident, Cinderall moved to NYC and she lived happily ever after.")
+
+scene12()
    
     
 def rebellionscore(points):
