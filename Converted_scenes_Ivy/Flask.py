@@ -12,10 +12,11 @@ def scene3():
 @app.route("/scene3a", methods = ['post'])
 def scene3a():
     comment = request.form['response']
+    new_comment = comment.split()
     angryWords = "deserve desire want angry mad unfair upset fight !"
     submissiveWords = "okay fine ... ok right alright sure yes agree"
-    angry = [word for word in comment if word in angryWords]
-    submissive = [word for word in comment if word in submissiveWords]
+    angry = [word for word in new_comment if word in angryWords]
+    submissive = [word for word in new_comment if word in submissiveWords]
     global points
     if len(angry) >= 1:
         points = points + 2
