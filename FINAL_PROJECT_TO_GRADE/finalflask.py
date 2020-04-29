@@ -6,6 +6,8 @@ app = Flask(__name__, template_folder= "templates")
 def about():
     global points
     points = 0
+    global l
+    l = []
     return render_template("about.html")
 
 @app.route("/scene1")
@@ -20,18 +22,24 @@ def scene1_a():
 def scene1_b():
     global points
     points = points + 1
+    global l
+    l.append(1)
     return render_template("scene1_b.html")
 
 @app.route("/scene1_c")
 def scene1_c():
     global points
     points = points + 2
+    global l
+    l.append(2)
     return render_template("scene1_c.html")
 
 @app.route("/scene1_d")
 def scene1_d():
     global points
     points = points + 3
+    global l
+    l.append(3)
     return render_template("scene1_d.html")
 
 @app.route("/scene2")
@@ -48,18 +56,24 @@ def scene2a():
 def scene2b():
     global points
     points = points + 1
+    global l
+    l.append(1)
     return render_template("scene2_b.html")
 
 @app.route("/scene2_c")
 def scene2c():
     global points
     points = points + 2
+    global l
+    l.append(2)
     return render_template("scene2_c.html")
 
 @app.route("/scene2_d")
 def scene2d():
     global points
     points = points + 3
+    global l
+    l.append(3)
     return render_template("scene2_d.html")
 
 @app.route("/scene3")
@@ -75,14 +89,17 @@ def scene3a():
     angry = [word for word in new_comment if word in angryWords]
     submissive = [word for word in new_comment if word in submissiveWords]
     global points
+    global l
     if len(angry) >= 1:
         points = points + 2
+        l.append(2)
         sisters = "They look shocked at your outburst, but they still say with arrogance, 'We're going to a ball at the palace. And you're not invited.'"
     elif len(submissive) >= 1:
         points = points + 0
         sisters = "They nod. 'Good bye', they say. The next morning, however, as you walk by their door to prepare them breakfast, you hear them laughing. 'I'm so excited for the ball!' they exclaim. You realize that last night, they had been trying on dresses for the ball."
     else:
         points = points + 1
+        l.append(1)
         sisters = "But they don't even listen to what you have to say. They laugh over your response and slam the door shut. You eavesdrop, and realize that they're trying on clothes for a ball at the palace."
     return render_template("scene3a.html",
                           answer = sisters
@@ -104,6 +121,8 @@ def scene4a():
 def scene4b():
     global points
     points = points + 1
+    global l
+    l.append(1)
     global past
     past = "You realize your sisters are going back home at midnight, and they will be suspicious if you are not there if they call you to make them some tea after a night out. In your haste running back home and away from the prince, you leave behind a shoe."
     return render_template("scene4b.html")
@@ -112,6 +131,8 @@ def scene4b():
 def scene4c():
     global points
     points = points + 2
+    global l
+    l.append(2)
     global past
     past = "You realize your sisters are going back home at midnight, and they will be suspicious if you are not there if they call you to make them some tea after a night out. In your haste running back home and away from the prince, you leave behind a shoe."
     return render_template("scene4c.html")
@@ -128,18 +149,24 @@ def scene5a():
 def scene5b():
     global points
     points = points + 1
+    global l
+    l.append(1)
     return render_template("scene5b.html")
 
 @app.route("/scene5c")
 def scene5c():
     global points
     points = points + 2
+    global l
+    l.append(2)
     return render_template("scene5c.html")
 
 @app.route("/scene5d")
 def scene5d():
     global points
     points = points + 3
+    global l
+    l.append(3)
     return render_template("scene5d.html")
 
 @app.route("/scene6")
@@ -156,18 +183,24 @@ def scene6a():
 def scene6b():
     global points
     points = points + 1
+    global l
+    l.append(1)
     return render_template("scene6_next1.html")
 
 @app.route("/scene6_next2")
 def scene6c():
     global points
     points = points + 2
+    global l
+    l.append(2)
     return render_template("scene6_next2.html")
 
 @app.route("/scene6_next3")
 def scene6d():
     global points
     points = points + 3
+    global l
+    l.append(3)
     return render_template("scene6_next3.html")
 
 @app.route("/scene7")
@@ -193,18 +226,24 @@ def scene8a():
 def scene8b():
     global points
     points = points + 1
+    global l
+    l.append(1)
     return render_template("scene8_ab1.html")
 
 @app.route("/scene8_cd0")
 def scene8c():
     global points
     points = points + 2
+    global l
+    l.append(2)
     return render_template("scene8_cd0.html")
 
 @app.route("/scene8_cd1")
 def scene8d():
     global points
     points = points + 3
+    global l
+    l.append(3)
     return render_template("scene8_cd1.html")
 
 @app.route("/scene9")
@@ -219,6 +258,8 @@ def scene9_a():
 def scene9_b():
     global points
     points = points + 1
+    global l
+    l.append(1)
     return render_template("scene9_b.html")
 
 @app.route("/scene10")
@@ -233,6 +274,8 @@ def scene10_a():
 def scene10_b():
     global points
     points = points + 1
+    global l
+    l.append(1)
     return render_template("scene10_b.html")
 
 
@@ -250,6 +293,10 @@ def scene11_b():
 
 @app.route("/scene12")
 def scene12():
+    global l
+    l = l
+    import statistics
+    points_list = statistics.mean(l)
     global points
     points = points
     if points <= 9:
@@ -260,7 +307,8 @@ def scene12():
         rebellion_score = "You are super rebellious"
     return render_template("scene12.html",
                            point = points,
-                           rebellion = rebellion_score
+                           rebellion = rebellion_score,
+                           points_average = points_list
                           )
 
 if __name__ == '__main__':
