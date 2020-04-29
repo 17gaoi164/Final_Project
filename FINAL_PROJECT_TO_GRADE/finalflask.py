@@ -38,25 +38,25 @@ def scene1_d():
 def scene2():
     return render_template("scene2.html")
 
-@app.route("/scene2a")
+@app.route("/scene2_a")
 def scene2a():
     global points
     points = points + 0
     return render_template("scene2_a.html")
 
-@app.route("/scene2b")
+@app.route("/scene2_b")
 def scene2b():
     global points
     points = points + 1
     return render_template("scene2_b.html")
 
-@app.route("/scene2c")
+@app.route("/scene2_c")
 def scene2c():
     global points
     points = points + 2
     return render_template("scene2_c.html")
 
-@app.route("/scene2d")
+@app.route("/scene2_d")
 def scene2d():
     global points
     points = points + 3
@@ -146,25 +146,25 @@ def scene5d():
 def scene6():
     return render_template("scene6.html")
 
-@app.route("/scene6a")
+@app.route("/scene6_next")
 def scene6a():
     global points
     points = points + 0
     return render_template("scene6_next.html")
 
-@app.route("/scene6b")
+@app.route("/scene6_next1")
 def scene6b():
     global points
     points = points + 1
     return render_template("scene6_next1.html")
 
-@app.route("/scene6c")
+@app.route("/scene6_next2")
 def scene6c():
     global points
     points = points + 2
     return render_template("scene6_next2.html")
 
-@app.route("/scene6d")
+@app.route("/scene6_next3")
 def scene6d():
     global points
     points = points + 3
@@ -183,25 +183,25 @@ def scene7():
 def scene8():
     return render_template("scene8.html")
 
-@app.route("/scene8a")
+@app.route("/scene8_ab0")
 def scene8a():
     global points
     points = points + 0
     return render_template("scene8_ab0.html")
 
-@app.route("/scene8b")
+@app.route("/scene8_ab1")
 def scene8b():
     global points
     points = points + 1
     return render_template("scene8_ab1.html")
 
-@app.route("/scene8c")
+@app.route("/scene8_cd0")
 def scene8c():
     global points
     points = points + 2
     return render_template("scene8_cd0.html")
 
-@app.route("/scene8d")
+@app.route("/scene8_cd1")
 def scene8d():
     global points
     points = points + 3
