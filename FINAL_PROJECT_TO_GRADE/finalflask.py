@@ -150,32 +150,24 @@ def scene6():
 def scene6a():
     global points
     points = points + 0
-    global past
-    past = "...story continues..."
     return render_template("scene6_next.html")
 
 @app.route("/scene6b")
 def scene6b():
     global points
     points = points + 1
-    global past
-    past = "...story continues..."
     return render_template("scene6_next1.html")
 
 @app.route("/scene6c")
 def scene6c():
     global points
     points = points + 2
-    global past
-    past = "...story continues..."
     return render_template("scene6_next2.html")
 
 @app.route("/scene6d")
 def scene6d():
     global points
     points = points + 3
-    global past
-    past = "...story continues..."
     return render_template("scene6_next3.html")
 
 @app.route("/scene7")
