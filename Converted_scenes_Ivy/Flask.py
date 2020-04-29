@@ -2,8 +2,69 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__, template_folder= "templates")
 
-global points
-points = 0
+@app.route("/")
+def about():
+    global points
+    points = 0
+    return render_template("about.html")
+
+
+@app.route("/scene1")
+def scene1():
+    return render_template("scene1.html")
+
+@app.route("/scene1_a")
+def scene1_a():
+    return render_template("scene1_a.html")
+
+@app.route("/scene1_b")
+def scene1_b():
+    global points
+    points = points + 1
+    return render_template("scene1_b.html")
+
+@app.route("/scene1_c")
+def scene1_c():
+    global points
+    points = points + 2
+    return render_template("scene1_c.html")
+
+@app.route("/scene1_d")
+def scene1_d():
+    global points
+    points = points + 3
+    return render_template("scene1_d.html")
+
+
+
+@app.route("/scene2")
+def scene2():
+    return render_template("scene2.html")
+
+@app.route("/scene2_a")
+def scene2_a():
+    return render_template("scene2_a.html")
+
+@app.route("/scene2_b")
+def scene2_b():
+    global points
+    points = points + 1
+    return render_template("scene2_b.html")
+
+@app.route("/scene2_c")
+def scene2_c():
+    global points
+    points = points + 2
+    return render_template("scene2_c.html")
+
+@app.route("/scene2_d")
+def scene2_d():
+    global points
+    points = points + 3
+    return render_template("scene2_d.html")
+
+
+
 
 @app.route("/scene3")
 def scene3():
@@ -60,6 +121,43 @@ def scene4c():
     return render_template("scene4c.html"
                           )
 
+
+@app.route("/scene5")
+def scene5():
+    return render_template("scene5.html")
+
+@app.route("/scene5a")
+def scene5a():
+    return render_template("scene5a.html")
+
+@app.route("/scene5b")
+def scene5b():
+    global points
+    points = points + 1
+    return render_template("scene5b.html")
+
+@app.route("/scene5c")
+def scene5c():
+    global points
+    points = points + 2
+    return render_template("scene5c.html")
+
+@app.route("/scene5d")
+def scene5d():
+    global points
+    points = points + 3
+    return render_template("scene5d.html")
+
+
+@app.route("/scene6")
+def scene6():
+    return render_template("scene6.html")
+
+@app.route("/scene6_next")
+def scene6_next():
+    return render_template("scene6_next.html")
+
+
 @app.route("/scene7")
 def scene7():
     new_past = past
@@ -67,9 +165,80 @@ def scene7():
     points = points
     return render_template("scene7.html",
                           past_variable = new_past,
-                          point = points
                           )
-    
+
+@app.route("/scene8")
+def scene8():
+    return render_template("scene8.html")
+
+@app.route("/scene8_ab")
+def scene8_ab():
+    return render_template("scene8_ab.html")
+
+@app.route("/scene8_cd")
+def scene8_cd():
+    return render_template("scene8_cd.html")
+
+
+
+@app.route("/scene9")
+def scene9():
+    return render_template("scene9.html")
+
+@app.route("/scene9_a")
+def scene9_a():
+    return render_template("scene9_a.html")
+
+@app.route("/scene9_b")
+def scene9_b():
+    global points
+    points = points + 1
+    return render_template("scene9_b.html")
+
+
+
+@app.route("/scene10")
+def scene10():
+    return render_template("scene10.html")
+
+@app.route("/scene10_a")
+def scene10_a():
+    return render_template("scene10_a.html")
+
+@app.route("/scene10_b")
+def scene10_b():
+    global points
+    points = points + 1
+    return render_template("scene10_b.html")
+
+
+@app.route("/scene11")
+def scene11():
+    return render_template("scene11.html")
+
+@app.route("/scene11_a")
+def scene11_a():
+    return render_template("scene11_a.html")
+
+@app.route("/scene11_b")
+def scene11_b():
+    return render_template("scene11_b.html")
+
+@app.route("/scene12")
+def scene12():
+    global points
+    points = points
+    if points <= 9:
+        rebellion_score = "You are not very rebellious"
+    if points <= 18:
+        rebellion_score = "You're somewhat rebellious"
+    if points <= 27:
+        rebellion_score = "You are super rebellious"
+    return render_template("scene12.html",
+                           point = points,
+                           rebellion = rebellion_score
+                          )
+
 
 if __name__ == '__main__':
     app.run()
