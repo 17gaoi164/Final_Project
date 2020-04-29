@@ -165,8 +165,8 @@ def scene7(points, past):
 
 
 def scene8(points):
-	print ("However, your stepmom finds out that you went to the ball and is trying to lock you in the attic. What do you do? \n")
-	print ("Do you... \n A. You don’t fight back and let her lock you in the attic, as you don't want her to retaliate in a worse way. \n B. You angrily ask her why she’s doing this and you get locked in the attic, but not without a struggle. \n C. You physically fight your stepmom alone and escape. \n D. You physically fight your stepmom and stepsisters with the help of of the mice and you escape.")
+	print ("However, your stepmom finds out that you went to the ball and is trying to lock you in the attic. You... \n")
+	print ("A. don’t fight back and let her lock you in the attic, as you don't want her to retaliate in a worse way. \n B. angrily ask her why she’s doing this and you get locked in the attic, but not without a struggle. \n C. physically fight your stepmom alone and escape. \n D. physically fight your stepmom and stepsisters with the help of of the mice and you escape.")
 	
 	response= input()
 	
