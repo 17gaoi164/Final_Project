@@ -42,32 +42,24 @@ def scene2():
 def scene2a():
     global points
     points = points + 0
-    global past
-    past = "The stepsisters walk away smugly, feeling satisfied that you did their bidding."
     return render_template("scene2_a.html")
 
 @app.route("/scene2b")
 def scene2b():
     global points
     points = points + 1
-    global past
-    past = "The stepsisters tell you that you better do it now, and walk away, annoyed."
     return render_template("scene2_b.html")
 
 @app.route("/scene2c")
 def scene2c():
     global points
     points = points + 2
-    global past
-    past = "The stepsisters say that you have to do it or they'll tell your stepmother, and walk away, upset."
     return render_template("scene2_c.html")
 
 @app.route("/scene2d")
 def scene2d():
     global points
     points = points + 3
-    global past
-    past = "The stepsisters get so angry, tell you that you won't get away with this, and stomp away, furious."
     return render_template("scene2_d.html")
 
 @app.route("/scene3")
@@ -203,32 +195,24 @@ def scene8():
 def scene8a():
     global points
     points = points + 0
-    global past
-    past = "The mice free you by stealing the key to the attic from your stepmother."
     return render_template("scene8_ab0.html")
 
 @app.route("/scene8b")
 def scene8b():
     global points
     points = points + 1
-    global past
-    past = "The mice free you by stealing the key to the attic from your stepmother."
     return render_template("scene8_ab1.html")
 
 @app.route("/scene8c")
 def scene8c():
     global points
     points = points + 2
-    global past
-    past = "You can go show the Duke that the slipper fits you."
     return render_template("scene8_cd0.html")
 
 @app.route("/scene8d")
 def scene8d():
     global points
     points = points + 3
-    global past
-    past = "You can go show the Duke that the slipper fits you."
     return render_template("scene8_cd1.html")
 
 @app.route("/scene9")
